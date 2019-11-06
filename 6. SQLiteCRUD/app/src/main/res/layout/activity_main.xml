@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="My SQL APP"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_below="@+id/title"
+        android:hint="List title"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/content"
+        android:layout_below="@+id/name"
+        android:hint="List Content"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:layout_below="@+id/content"
+        android:id="@+id/createBtn"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="View All"
+        android:layout_alignRight="@+id/content"
+        android:layout_below="@+id/content"
+        android:id="@+id/viewData"/>
+
+<!--    <Button-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Delete All"-->
+<!--        android:layout_below="@+id/content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:id="@+id/deleteData"/>-->
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/viewData"
+        android:layout_alignParentBottom="true"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true" />
+
+</RelativeLayout>
